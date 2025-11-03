@@ -81,8 +81,18 @@ async function sendMessage() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        messages: chatHistory,
-      }),
+        messages:         messages: [
+         {
+           role: "assistant",
+           content: "You are a helpful, friendly assistant. Provide concise and accurate responses.",
+         },
+         {
+           role: "user",
+           content: message,
+         },
+      ],
+   }),
+ });
     });
 
     // Handle errors
