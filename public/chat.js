@@ -150,7 +150,7 @@ async function sendMessage() {
     console.error("Error:", error);
     addMessageToChat(
       "assistant",
-      "抱歉，您的文字內容觸發了規範敏感字眼，如有問題請聯繫客服人員",
+      "抱歉，您的文字內容觸發了規範敏感字眼，如有問題請聯繫客服人員。<br> Sorry, your message triggered restricted content rules. Please contact support if needed.",
     );
   } finally {
     // Hide typing indicator
