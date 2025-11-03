@@ -150,7 +150,7 @@ async function sendMessage() {
     console.error("Error:", error);
     addMessageToChat(
       "assistant",
-      "" 此訊息觸發 WAF 規則，無法回應。 \n This message triggered a WAF rule and cannot be processed."",
+      "Sorry, there was an error processing your request.",
     );
   } finally {
     // Hide typing indicator
