@@ -150,7 +150,7 @@ async function sendMessage() {
     console.error("Error:", error);
     addMessageToChat(
       "assistant",
-      "Sorry, there was an error processing your request.",
+      "抱歉，您的文字內容觸發了規範敏感字眼，如有問題請聯繫客服人員",
     );
   } finally {
     // Hide typing indicator
