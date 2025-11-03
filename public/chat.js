@@ -81,7 +81,7 @@ async function sendMessage() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        messages:         messages: [
+        messages: [
          {
            role: "assistant",
            content: "You are a helpful, friendly assistant. Provide concise and accurate responses.",
