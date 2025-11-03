@@ -81,8 +81,8 @@ async function sendMessage() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        messages: chatHistory , 
- });
+        messages: chatHistory
+ }),
     });
 
     // Handle errors
